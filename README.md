@@ -586,7 +586,7 @@ class UserController extends Controller
 
         ... // you own stuff
 
-        return Response('', 201, array(
+        return new Response('', 201, array(
             'Location' => $this->generateSelfUrl($user),
         ));
     }
